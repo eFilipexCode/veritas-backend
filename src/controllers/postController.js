@@ -7,7 +7,7 @@ module.exports = {
         res.json(response);
     },
     async create(req, res) {
-        const { title, content, description, author, idAuthor, thumbPath } = req.body;
+        const { title, content, description, author, idAuthor, thumbPath, archived } = req.body;
         let { category } = req.body;
 
         if (!title || !content || !author || !idAuthor) {
