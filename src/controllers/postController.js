@@ -28,7 +28,8 @@ module.exports = {
             idAuthor,
             thumbPath,
             category,
-            date: Date.now()
+            date: Date.now(),
+            archived
         };
 
         const response = await Post.create(data);
